@@ -8,24 +8,27 @@
   
    </head>
   </body>
+   {% include 'nav.html' %}
+   <img class="img-fluid" id="banner" src="https://4467e289-e6f2-4025-891f-05332c3e68bb-00-2ayxi8vtc08nr.pike.replit.dev/static/baner.jpeg.jpg" >
    <div class="container"> 
       <h1 class="text-center mt-4 mb-4">Smart Job</h1>
-      <img class="img-fluid" id="banner" src="https://4467e289-e6f2-4025-891f-05332c3e68bb-00-2ayxi8vtc08nr.pike.replit.dev/static/baner.jpeg.jpg" >
-        <h2 class="text-center mt-2 mb-4">About Smart Job</h2>
+      
+      
          <p class="lead"> 
           This job application aims to streamline the hiring process by introducing an intuitive platform for both applicants and employers. It focuses on enhancing user experience through automated resume screening, personalized job matching, and real-time communication. The goal is to reduce hiring time and improve candidate-employer compatibility. This applicaton will leverage modern technology to create a more efficient and accessible recruitment system
         </p>
-        <h2 class="text-center mt-2 mb-4">Positions Opening</h2>
+        <h2 class="text-center mt-2 mb-4">Open Positions</h2>
         <div>
           {% for job in jobs %}
           {% include 'jobitem.html' %}
           {% endfor %}
         </div>
         <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact us</button>
-          <P class="mt-4">Copyright 2023, Smart-job</P>
+        <a class="btn btn-primary btn-lg" href="mailto:vishalgupta2620@gmail.com?subject=Question%20about%20Smart%20Job&body=My%20name%3A%20%3CYour%20Name%3E%0AMy%20Question%3A%20%3Center%20Question%3E%0A">Contact us</a>
+          
         </div>
      </div>
+   {% include 'footer.html' %}
  </body>
 </html>
 
